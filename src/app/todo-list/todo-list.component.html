@@ -1,0 +1,8 @@
+<section class="main" *ngIf="todos.length > 0">
+  <mat-list *ngFor="let todo of todos">
+    <mat-list-item>
+      <app-todo-item
+        [todo]="todo"></app-todo-item>
+    </mat-list-item>
+  </mat-list>
+</section>

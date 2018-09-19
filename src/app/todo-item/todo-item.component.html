@@ -1,0 +1,4 @@
+<mat-checkbox (change)="toggleTodoComplete(todo)" [checked]="todo.isComplete">
+  {{todo.name}}
+</mat-checkbox>
+<mat-icon matListIcon (click)="removeTodo(todo)">delete</mat-icon>
